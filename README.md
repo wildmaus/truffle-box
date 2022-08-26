@@ -1,12 +1,4 @@
-# Name
-contracts in project
-#### Versions
-- truffle 5.4.28
-- solidity 0.8.16
-___
-### Name.sol
-description
+# truffle box
+The box with a large number of networks in the config and autoinstall node_modules. Also has more useful templates then base init.
 #### Comands
-- truffle migrate --f 1 --to 1 --network <network>
-- truffle run verify Name --network <network>
-___
+truffle unbox wildmaus/truffle-box
