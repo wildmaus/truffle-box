@@ -1,0 +1,13 @@
+{
+    "ignore": [
+    ],
+    "commands": {
+      "Compile contracts": "truffle compile",
+      "Migrate contracts": "truffle migrate",
+      "Test contracts": "truffle test",
+      "Test with reporter": "truffle test --reporter eth-gas-reporter"
+    },
+    "hooks": {
+      "post-unpack": "npm install"
+    }
+  }
