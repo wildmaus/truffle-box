@@ -1,5 +1,6 @@
 {
     "ignore": [
+      "README.md"
     ],
     "commands": {
       "Compile contracts": "truffle compile",
