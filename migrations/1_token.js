@@ -7,7 +7,7 @@ let {
     TOTAL_SUPPLY
 } = process.env;
 
-const Token = artifacts.require("Token");
+const Token = artifacts.require("TestToken");
 
 module.exports = async function (deployer, network) {
     if (network == "test" || network == "development")
