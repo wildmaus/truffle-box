@@ -2,7 +2,7 @@ const { BN, constants, expectEvent, expectRevert, time, snapshot, balance } = re
 const { assert, expect } = require("chai");
 const EthCrypto = require('eth-crypto');
 
-const Token = artifacts.require("Token");
+const Token = artifacts.require("TestToken");
 
 const DECIMALS = new BN(10).pow(new BN(18));
 const TOTAL_SUPPLY = new BN("100000000000").mul(DECIMALS);
