@@ -94,7 +94,7 @@ module.exports = {
         maticTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, "https://rpc-mumbai.maticvigil.com"),
             network_id: 80001,
-            gasPrice: web3.utils.toWei(DEPLOY_GAS_PRICE, 'gwei'),
+            // gasPrice: web3.utils.toWei(DEPLOY_GAS_PRICE, 'gwei'),
             confirmations: 2,
             timeoutBlocks: 200,
             skipDryRun: true
