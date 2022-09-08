@@ -1,7 +1,7 @@
 # Name
 contracts in project
 #### Versions
-- truffle 5.5.28
+- truffle 5.5.29
 - solidity 0.8.16
 ___
 ### Name.sol
