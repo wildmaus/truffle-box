@@ -2,7 +2,7 @@
 contracts in project
 #### Versions
 - truffle 5.5.29
-- solidity 0.8.16
+- solidity 0.8.17
 ___
 ### Name.sol
 description
