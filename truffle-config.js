@@ -19,7 +19,7 @@ const Web3 = require("web3");
 const web3 = new Web3();
 
 module.exports = {
-    plugins: ['truffle-plugin-verify', 'truffle-contract-size'],
+    plugins: ['truffle-plugin-verify', 'truffle-contract-size', 'solidity-coverage'],
 
     api_keys: {
         etherscan: ETHERSCAN_API_KEY,

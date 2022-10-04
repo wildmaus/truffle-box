@@ -7,10 +7,11 @@
     "eth-gas-reporter": "^0.2.25",
     "@openzeppelin/test-helpers": "^0.5.16",
     "eth-crypto": "^2.3.0",
-    "@truffle/hdwallet-provider": "^2.0.14",
-    "dotenv": "^11.0.0",
+    "@truffle/hdwallet-provider": "^2.0.16",
+    "dotenv": "^16.0.3",
     "truffle-contract-size": "^2.0.1",
     "truffle-plugin-verify": "^0.5.28",
-    "web3": "^1.7.5"
+    "web3": "^1.8.0",
+    "solidity-coverage": "0.7.18"
   }
 }

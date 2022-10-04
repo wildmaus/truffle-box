@@ -9,3 +9,5 @@ package-lock.json
 Migration.sol
 flattened/
 save/
+coverage
+coverage.json

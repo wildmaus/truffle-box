@@ -6,7 +6,8 @@
       "Compile contracts": "truffle compile",
       "Migrate contracts": "truffle migrate",
       "Test contracts": "truffle test",
-      "Test with reporter": "truffle test --reporter eth-gas-reporter"
+      "Test with reporter": "truffle test --reporter eth-gas-reporter",
+      "Test coverage": "truffle run coverage"
     },
     "hooks": {
       "post-unpack": "npm install"
