@@ -10,6 +10,8 @@
       "Test coverage": "truffle run coverage"
     },
     "hooks": {
-      "post-unpack": "npm install"
+      "post-unpack": "npm install",
+      "copy env": "cp ../.env .env",
+      "make executable": "chmod +x depVer.sh"
     }
   }
