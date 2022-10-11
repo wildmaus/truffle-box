@@ -10,6 +10,7 @@
       "Test coverage": "truffle run coverage"
     },
     "hooks": {
+      "console": "echo $PWD",
       "copy env": "cp ../.env .env",
       "install modules": "npm install",
       "make executable": "chmod +x depVer.sh"
