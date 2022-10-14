@@ -42,7 +42,7 @@ module.exports = {
             provider: () => new HDWalletProvider(MNEMONIC, "https://ropsten.infura.io/v3/" + INFURA_ID_PROJECT),
             network_id: 3,
             gas: DEPLOY_GAS_LIMIT,
-            confirmations: 2,
+            confirmations: 4,
             skipDryRun: true
         },
         mainnet: {
@@ -62,14 +62,14 @@ module.exports = {
         rinkeby: {
             provider: () => new HDWalletProvider(MNEMONIC, "https://rinkeby.infura.io/v3/" + INFURA_ID_PROJECT),
             network_id: 4,
-            confirmations: 2,
+            confirmations: 4,
             gas: DEPLOY_GAS_LIMIT,
             skipDryRun: true
         },
         bscTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, "https://data-seed-prebsc-1-s2.binance.org:8545"),
             network_id: 97,
-            confirmations: 2,
+            confirmations: 4,
             timeoutBlocks: 200,
             skipDryRun: true
         },
@@ -92,17 +92,17 @@ module.exports = {
             skipDryRun: false
         },
         maticTestnet: {
-            provider: () => new HDWalletProvider(MNEMONIC, "https://rpc-mumbai.maticvigil.com"),
+            provider: () => new HDWalletProvider(MNEMONIC, "https://rpc.ankr.com/polygon_mumbai"),
             network_id: 80001,
             // gasPrice: web3.utils.toWei(DEPLOY_GAS_PRICE, 'gwei'),
-            confirmations: 2,
+            confirmations: 4,
             timeoutBlocks: 200,
             skipDryRun: true
         },
         hecoTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, 'https://http-testnet.hecochain.com'),
             network_id: 256,
-            confirmations: 2,
+            confirmations: 4,
             timeoutBlocks: 200,
             skipDryRun: true 
         },
@@ -129,7 +129,7 @@ module.exports = {
             network_id: 44787,
             gasPrice: web3.utils.toWei(DEPLOY_GAS_PRICE, 'gwei'),
             gas: DEPLOY_GAS_LIMIT,
-            confirmations: 2,
+            confirmations: 4,
             timeoutBlocks: 200,
             skipDryRun: true,
             networkCheckTimeout: 999999
@@ -146,7 +146,7 @@ module.exports = {
         fantomTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, 'https://rpc.testnet.fantom.network/'),
             network_id: 4002,
-            confirmations: 2,
+            confirmations: 4,
             timeoutBlocks: 200,
             skipDryRun: true,
         },
@@ -162,7 +162,7 @@ module.exports = {
         avalancheTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, 'https://api.avax-test.network/ext/bc/C/rpc'),
             network_id: 43113,
-            confirmations: 2,
+            confirmations: 4,
             timeoutBlocks: 200,
             skipDryRun: true,
         },
@@ -178,7 +178,7 @@ module.exports = {
         cronosTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, 'https://cronos-testnet-3.crypto.org:8545'),
             network_id: 338,
-            confirmations: 2,
+            confirmations: 4,
             timeoutBlocks: 200,
             skipDryRun: true,
         }
