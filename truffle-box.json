@@ -10,6 +10,6 @@
       "Test coverage": "truffle run coverage"
     },
     "hooks": {
-      "post-unpack": "npm install && cp ../.env .env && chmod +x depVer.sh"
+      "post-unpack": "echo install node modules && npm install && echo copy .env && cp ../.env .env && chmod +x depVer.sh"
     }
   }
