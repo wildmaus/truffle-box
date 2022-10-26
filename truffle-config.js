@@ -41,8 +41,8 @@ module.exports = {
         goerli: {
             provider: () => new HDWalletProvider(MNEMONIC, "https://goerli.infura.io/v3/" + INFURA_ID_PROJECT),
             network_id: 5,
-            gas: DEPLOY_GAS_LIMIT,
             confirmations: 2,
+            timeoutBlocks: 200,
             skipDryRun: true
         },
         mainnet: {
@@ -50,12 +50,14 @@ module.exports = {
             network_id: 1,
             gasPrice: web3.utils.toWei(DEPLOY_GAS_PRICE, 'gwei'),
             gas: DEPLOY_GAS_LIMIT,
+            confirmations: 2,
+            timeoutBlocks: 200,
             skipDryRun: false
         },
         bscTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, "https://data-seed-prebsc-1-s2.binance.org:8545"),
             network_id: 97,
-            confirmations: 4,
+            confirmations: 2,
             timeoutBlocks: 200,
             skipDryRun: true
         },
@@ -66,7 +68,7 @@ module.exports = {
             gas: DEPLOY_GAS_LIMIT,
             confirmations: 2,
             timeoutBlocks: 200,
-            skipDryRun: true
+            skipDryRun: false
         },
         maticMainnet: {
             provider: () => new HDWalletProvider(MNEMONIC, "https://polygon-rpc.com/"),
