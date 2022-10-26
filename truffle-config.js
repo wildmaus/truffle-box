@@ -38,11 +38,11 @@ module.exports = {
             network_id: "*",
             gas: 30000000
         }, */
-        ropsten: {
-            provider: () => new HDWalletProvider(MNEMONIC, "https://ropsten.infura.io/v3/" + INFURA_ID_PROJECT),
-            network_id: 3,
+        goerli: {
+            provider: () => new HDWalletProvider(MNEMONIC, "https://goerli.infura.io/v3/" + INFURA_ID_PROJECT),
+            network_id: 5,
             gas: DEPLOY_GAS_LIMIT,
-            confirmations: 4,
+            confirmations: 2,
             skipDryRun: true
         },
         mainnet: {
@@ -51,20 +51,6 @@ module.exports = {
             gasPrice: web3.utils.toWei(DEPLOY_GAS_PRICE, 'gwei'),
             gas: DEPLOY_GAS_LIMIT,
             skipDryRun: false
-        },
-        kovan: {
-            provider: () => new HDWalletProvider(MNEMONIC, "https://kovan.infura.io/v3/" + INFURA_ID_PROJECT),
-            network_id: 42,
-            confirmations: 1,
-            gas: DEPLOY_GAS_LIMIT,
-            skipDryRun: true
-        },
-        rinkeby: {
-            provider: () => new HDWalletProvider(MNEMONIC, "https://rinkeby.infura.io/v3/" + INFURA_ID_PROJECT),
-            network_id: 4,
-            confirmations: 4,
-            gas: DEPLOY_GAS_LIMIT,
-            skipDryRun: true
         },
         bscTestnet: {
             provider: () => new HDWalletProvider(MNEMONIC, "https://data-seed-prebsc-1-s2.binance.org:8545"),
